@@ -29,7 +29,6 @@ class Dom {
   onEvent(event='click',callback){
     this.item.addEventListener(event,callback)
   }
-  // ! fix it
   setValue(val) {
     this.item.attributes["value"].value = val;
   }
@@ -82,6 +81,10 @@ class Dom {
   get() {
     return this.item;
   }
+  left(leftPixel) {
+    this.item.left = leftPixel + "px";
+    return this;
+  }
   set(
     left = null,
     top = null,
@@ -112,22 +115,6 @@ class Dom {
     this.show(disp);
     return this;
   }
-  getParams(){
-      return {
-        obj: {
-          left: this.left || this.item.offsetLeft,
-          top: this.top || this.item.offsetTop,
-          height: this.height || this.item.offsetHeight,
-          width: this.width || this.item.offsetWidth,
-        },
-        array: [
-          this.left || this.item.offsetLeft,
-          this.top || this.item.offsetTop,
-          this.height || this.item.offsetHeight,
-          this.width || this.item.offsetWidth,
-        ]
-      }
-  }
   show(disp = "block") {
     //! push for every element
     this.push();
@@ -153,7 +140,7 @@ class Dom {
     return this;
   }
   fadeShow(duration = 700, onCompleteCallback = null){
-    this.show().opacity(0)
+    this.set().opacity(0)
     anime({
       targets: this.item,
       opacity: 1,
@@ -246,7 +233,7 @@ class Dom {
     let arrowHeight = 40;
     let arrowWidth = 34;
     let arrowRotate = 0;
-    let gap = 2
+    let gap = 6
 
     // get left top height and width of the connectingElement
     const connectingElementProps = {
@@ -300,7 +287,7 @@ class Dom {
     }
 
     blinkArrow.set(arrowLeft, arrowTop, arrowHeight, arrowWidth).rotate(arrowRotate).zIndex(10000);
-    let y = 10;
+    let y = 20;
 
     var blink = anime({
       targets: blinkArrow.item,

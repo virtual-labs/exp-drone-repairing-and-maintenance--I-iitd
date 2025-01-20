@@ -9,10 +9,8 @@ import Layout from "./Layout.js";
 import Download from "../toolkit/toolkit.js";
 import Src from "./Src.js";
 import Scenes from "./Scenes.js";
-import Steps from "./Steps.js";
 import Events from "./Events.js";
 import Sliders from "./Sliders.js";
-import DragAndDrop from './DragAndDrop.js';
 import { DeveloperTools, PropertiesTab} from '../developer tools/developer_tools.js'
 
 
@@ -22,7 +20,6 @@ export {
     DomList,
     Util,
     Scenes,
-    Steps,
     Events,
     Anime,
     Src,
@@ -32,5 +29,4 @@ export {
     DB,
     DeveloperTools,
     PropertiesTab,
-    DragAndDrop,
 };

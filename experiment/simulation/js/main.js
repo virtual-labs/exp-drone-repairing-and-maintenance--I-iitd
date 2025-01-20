@@ -1,17 +1,12 @@
-import { Download, Scenes, DeveloperTools, Steps } from "./Libs.js";
+import { Download, Scenes, Src, Dom, DomList, Util, DB, DeveloperTools } from "./Libs.js";
 
 
 document.addEventListener('DOMContentLoaded', ()=>{
-  // add steps
-  Scenes.steps = Steps.steps
-  
   // stepcalling
-  Scenes.currentStep = 4;
+  Scenes.currentStep = 0;
   Scenes.next();
 
   Download.init()
-  DeveloperTools.updateMousePosition()
-  // Download.toggleSpinner()
   // DeveloperTools.init()
 
   $( function() {

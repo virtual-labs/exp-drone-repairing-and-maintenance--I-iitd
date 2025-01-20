@@ -14,7 +14,6 @@ const DeveloperTools = {
     this.setCSSinHTML()
     this.setHTMLTools()
     this.attachEvents()
-    this.updateMousePosition()
     PropertiesTab.init()
   },
   attachEvents(){
@@ -36,7 +35,7 @@ const DeveloperTools = {
   setHTMLTools(){
     let developerToolsHTML = `<div class="developer-tools">
     <div class="sidebar">
-      <span class="copied-text" style="display: none;">Copied!</span>
+      <span class="copied-text">Copied!</span>
       <h3 class="element-name">
         Element
       </h3>
@@ -111,27 +110,6 @@ const DeveloperTools = {
             </div>
           </div>
         </div>
-        <div class="group mouse-position">
-          <div class="head">
-            <span class="title">Mouse Position</span>
-            <button class="copy size-css">
-              <img src="./developer tools/img/copy-icon.png">
-              Copy
-            </button>
-          </div>
-          <div>
-            <div class="input-box mouse-left">
-              <span class="label">Left</span>
-              <input type="text" class="height" value="0" readonly>
-              <span class="unit">px</span>
-            </div>
-            <div class="input-box mouse-top">
-              <span class="label">Top</span>
-              <input type="text" class="height" value="0" readonly>
-              <span class="unit">px</span>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>`
@@ -180,7 +158,7 @@ const DeveloperTools = {
       //     });
       // },
       // containment: 'parent'
-      aspectRatio: true ,
+      // aspectRatio: true,
     };
 
     // $("#formulas_universal").resizable(resizeConfig);
@@ -215,58 +193,13 @@ const DeveloperTools = {
       this.messageCopied()
     }
 
-    const copyFuncWithoutRotate = ()=>{
-      let currentElement = PropertiesTab.Element.selected
-      if(currentElement == null) return
-      // get the values from the properties tab
-      let currentElementLeft = PropertiesTab.ToolBar.left.value
-      let currentElementTop = PropertiesTab.ToolBar.top.value
-      let currentElementHeight = PropertiesTab.ToolBar.height.value
-      let currentElementWidth = PropertiesTab.ToolBar.width.value
-      let currentElementRotate = PropertiesTab.ToolBar.rotate.value
-      // copy navigator just values in secuence with coma separated
-      let values = `${currentElementLeft}, ${currentElementTop}, ${currentElementHeight}, ${currentElementWidth}`
-      navigator.clipboard.writeText(values)
-      this.messageCopied()
-    }
-
-    $(".developer-tools .pos-css").on("click", copyFuncWithoutRotate)
-    $(".developer-tools .pos-js").on("click", copyFuncWithoutRotate)
-
+    $(".developer-tools .pos-css").on("click", copyFunc)
+    $(".developer-tools .pos-js").on("click", copyFunc)
     $(".developer-tools .size-css").on("click", copyFunc)
     $(".developer-tools .size-js").on("click", copyFunc)
-
     $(".developer-tools .rotate-css").on("click", copyFunc)
     $(".developer-tools .rotate-js").on("click", copyFunc)
   } ,
-  updateMousePosition(){
-    let mouseLeftInputDom = Util.get(".mouse-position .mouse-left input")
-    let mouseTopInputDom = Util.get(".mouse-position .mouse-top input")
-    let btnMousePosCopy = Util.get(".mouse-position .copy")
-    let mouseWindow = Util.get(".anime-main")
-    
-    let values = ""
-
-    if(mouseLeftInputDom == null) return
-
-    mouseWindow.addEventListener('mousemove', event => {
-      const rect = mouseWindow.getBoundingClientRect();
-      
-      const left = Math.round(event.clientX - rect.left); 
-      const top = Math.round(event.clientY - rect.top);  
-      
-      mouseLeftInputDom.value = left
-      mouseTopInputDom.value = top
-
-      values = `${left}, ${top}`
-    })
-
-    mouseWindow.addEventListener('contextmenu', ()=>{
-      navigator.clipboard.writeText(values)
-      this.messageCopied(values)
-    })
-
-  },
   messageCopied(){
     $(".developer-tools .copied-text").fadeIn(300).fadeOut(300)
   }
@@ -408,15 +341,6 @@ const PropertiesTab = {
     uiDraggable: ".ui-draggable",
     // current Element
     selected: null,
-    getRotationOfElement(element){
-      const transform = window.getComputedStyle(element).transform;
-    
-      if (transform === 'none') return 0;
-    
-      const match = transform.match(/rotate\(([-0-9.]+)deg\)/);
-    
-      return match ? parseFloat(match[1]) : 0;
-    },
     updatePositionAndSize(left, top, height, width, rotate) {
       this.left = left;
       this.top = top;
@@ -433,7 +357,7 @@ const PropertiesTab = {
         this.selected.style.rotate = `${this.rotate}deg`
 
       $(this.uiWrapper).css({
-        left : `${this.left}px`,
+      left : `${this.left}px`,
         top: `${this.top}px`,
         height: this.height,
         width: this.width,
@@ -443,11 +367,6 @@ const PropertiesTab = {
     onInput() {},
     update(ele) {
       if (this.selected != ele && this.selected != null) {
-        // add rotation
-        if(this.selected.classList.contains("main-window-imgs")){
-          this.selected.style.rotate = `${this.rotate}deg`
-        }
-      
         $(this.selected).resizable("destroy");
         $(this.uiWrapper).draggable("destroy");
 
@@ -465,7 +384,7 @@ const PropertiesTab = {
       this.selected = ele;
 
       // update the left and top of input by  the current selected element
-      PropertiesTab.ToolBar.rotate.value = this.getRotationOfElement(ele)
+      PropertiesTab.ToolBar.rotate.value = PropertiesTab.Element.rotate
 
       $(this.selected).resizable({
         resize(event, ui) {

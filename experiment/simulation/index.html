@@ -34,7 +34,6 @@
   <link href="./toolkit/toolkit.css" rel="stylesheet" />
   <link href="./toolkit/toolkit.js" rel="stylesheet" />
   <link href="./toolkit/main_spinner.css" rel="stylesheet" />
-
 </head>
 
 <body>
@@ -47,28 +46,9 @@
     </p>
   </div>
 
-  <!-- <div class="development-tools" style="position: fixed; top: 0; z-index: 100000; background-color: white;">
-    <div class="group mouse-position">
-      <div class="head">
-        <span class="title">Mouse Position</span>
-        <button class="copy size-css">
-          Copy
-        </button>
-      </div>
-      <div>
-        <div class="input-box mouse-left">
-          <span class="label">Left</span>
-          <input style="width: 50px;" type="text" class="height" value="0" readonly>
-          <span class="unit">px</span>
-        </div>
-        <div class="input-box mouse-top">
-          <span class="label">Top</span>
-          <input style="width: 50px;" type="text" class="height" value="0" readonly>
-          <span class="unit">px</span>
-        </div>
-      </div>
-    </div>
-  </div> -->
+  <div class="development-tools">
+    
+  </div>
 
   <div class="main-container">
 
@@ -186,10 +166,6 @@
               <p class="error">Please enter your name before start</p>
               <input class="btn" id="nameSubmitBtn" type="submit" value="Start" />
             </form>
-
-            <!-- * for taking input from the user -->
-             <input type="text" id="inputBox">
-             <p id="error"></p>
 
             <!-- * Graphs -->
             <div class="graph_box graph_box0">
@@ -481,341 +457,113 @@
             <!-- Step Images -->
             <div class="step-images">
               <!-- * Step Images will be added here -->
-              <img id="background_drone_fly_area" src="./src/images/step/background_drone_fly_area.png" class="main-window-imgs"/>
-              <img id="background_gcp_1" src="./src/images/step/background_gcp_1.png" class="main-window-imgs"/>
-              <img id="background_gcp_2" src="./src/images/step/background_gcp_2.png" class="main-window-imgs"/>
-              <img id="background_gcp_3" src="./src/images/step/background_gcp_3.png" class="main-window-imgs"/>
-              <img id="background_gcp_4" src="./src/images/step/background_gcp_4.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_1" src="./src/images/step/base_setup_phone_display_1.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_10" src="./src/images/step/base_setup_phone_display_10.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_11" src="./src/images/step/base_setup_phone_display_11.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_11_1" src="./src/images/step/base_setup_phone_display_11_1.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_11_2" src="./src/images/step/base_setup_phone_display_11_2.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_12" src="./src/images/step/base_setup_phone_display_12.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_13" src="./src/images/step/base_setup_phone_display_13.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_13_1" src="./src/images/step/base_setup_phone_display_13_1.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_13_2" src="./src/images/step/base_setup_phone_display_13_2.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_13_3" src="./src/images/step/base_setup_phone_display_13_3.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_14" src="./src/images/step/base_setup_phone_display_14.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_14_1" src="./src/images/step/base_setup_phone_display_14_1.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_14_2" src="./src/images/step/base_setup_phone_display_14_2.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_15" src="./src/images/step/base_setup_phone_display_15.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_16" src="./src/images/step/base_setup_phone_display_16.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_16_1" src="./src/images/step/base_setup_phone_display_16_1.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_16_2" src="./src/images/step/base_setup_phone_display_16_2.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_17" src="./src/images/step/base_setup_phone_display_17.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_17_1" src="./src/images/step/base_setup_phone_display_17_1.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_18" src="./src/images/step/base_setup_phone_display_18.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_18_1" src="./src/images/step/base_setup_phone_display_18_1.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_18_10" src="./src/images/step/base_setup_phone_display_18_10.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_18_2" src="./src/images/step/base_setup_phone_display_18_2.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_18_3" src="./src/images/step/base_setup_phone_display_18_3.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_18_4" src="./src/images/step/base_setup_phone_display_18_4.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_18_5" src="./src/images/step/base_setup_phone_display_18_5.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_18_6" src="./src/images/step/base_setup_phone_display_18_6.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_18_7" src="./src/images/step/base_setup_phone_display_18_7.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_18_8" src="./src/images/step/base_setup_phone_display_18_8.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_18_9" src="./src/images/step/base_setup_phone_display_18_9.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_19" src="./src/images/step/base_setup_phone_display_19.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_2" src="./src/images/step/base_setup_phone_display_2.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_20" src="./src/images/step/base_setup_phone_display_20.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_21" src="./src/images/step/base_setup_phone_display_21.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_22" src="./src/images/step/base_setup_phone_display_22.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_3" src="./src/images/step/base_setup_phone_display_3.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_4" src="./src/images/step/base_setup_phone_display_4.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_5" src="./src/images/step/base_setup_phone_display_5.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_6" src="./src/images/step/base_setup_phone_display_6.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_7" src="./src/images/step/base_setup_phone_display_7.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_7_1" src="./src/images/step/base_setup_phone_display_7_1.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_7_2" src="./src/images/step/base_setup_phone_display_7_2.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_7_3" src="./src/images/step/base_setup_phone_display_7_3.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_8" src="./src/images/step/base_setup_phone_display_8.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_9" src="./src/images/step/base_setup_phone_display_9.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_9_1" src="./src/images/step/base_setup_phone_display_9_1.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_9_2" src="./src/images/step/base_setup_phone_display_9_2.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_display_9_3" src="./src/images/step/base_setup_phone_display_9_3.png" class="main-window-imgs"/>
-              <img id="base_setup_phone_dummy_transformed" src="./src/images/step/base_setup_phone_dummy_transformed.png" class="main-window-imgs"/>
-              <img id="base_setup_spray_mark" src="./src/images/step/base_setup_spray_mark.png" class="main-window-imgs"/>
-              <img id="base_setup_spray_paint" src="./src/images/step/base_setup_spray_paint.png" class="main-window-imgs"/>
-              <img id="base_setup_stake" src="./src/images/step/base_setup_stake.png" class="main-window-imgs"/>
-              <img id="base_setup_stake_transformed" src="./src/images/step/base_setup_stake_transformed.png" class="main-window-imgs"/>
-              <img id="base_setup_view_finder_zoom" src="./src/images/step/base_setup_view_finder_zoom.png" class="main-window-imgs"/>
-              <img id="base_setup_view_finder_zoom_screen" src="./src/images/step/base_setup_view_finder_zoom_screen.png" class="main-window-imgs"/>
-              <img id="base_tripod" src="./src/images/step/base_tripod.png" class="main-window-imgs"/>
-              <img id="base_tripod_closed" src="./src/images/step/base_tripod_closed.png" class="main-window-imgs"/>
-              <img id="base_tripod_with_attached_tribrech" src="./src/images/step/base_tripod_with_attached_tribrech.png" class="main-window-imgs"/>
-              <img id="battry" src="./src/images/step/battry.png" class="main-window-imgs"/>
-              <img id="battry1" src="./src/images/step/battry1.png" class="main-window-imgs"/>
-              <img id="black_bcg" src="./src/images/step/black_bcg.png" class="main-window-imgs"/>
-              <img id="box1" src="./src/images/step/box1.png" class="main-window-imgs"/>
-              <img id="box_1" src="./src/images/step/box_1.png" class="main-window-imgs"/>
-              <img id="box_2" src="./src/images/step/box_2.png" class="main-window-imgs"/>
-              <img id="box_3" src="./src/images/step/box_3.png" class="main-window-imgs"/>
-              <img id="box_4" src="./src/images/step/box_4.png" class="main-window-imgs"/>
-              <img id="box_5" src="./src/images/step/box_5.png" class="main-window-imgs"/>
-              <img id="box_6" src="./src/images/step/box_6.png" class="main-window-imgs"/>
-              <img id="box_7" src="./src/images/step/box_7.png" class="main-window-imgs"/>
-              <img id="box_8" src="./src/images/step/box_8.png" class="main-window-imgs"/>
-              <img id="car_trunk_open" src="./src/images/step/car_trunk_open.png" class="main-window-imgs"/>
-              <img id="car_trunk_with_drone_box_and_coness" src="./src/images/step/car_trunk_with_drone_box_and_coness.png" class="main-window-imgs"/>
-              <img id="car_trunk_zoom" src="./src/images/step/car_trunk_zoom.png" class="main-window-imgs"/>
-              <img id="car_trunk_zoom_box" src="./src/images/step/car_trunk_zoom_box.png" class="main-window-imgs"/>
-              <img id="car_trunk_zoom_box_open" src="./src/images/step/car_trunk_zoom_box_open.png" class="main-window-imgs"/>
-              <img id="components_in_trunk" src="./src/images/step/components_in_trunk.png" class="main-window-imgs"/>
-              <img id="cone_1" src="./src/images/step/cone_1.png" class="main-window-imgs"/>
-              <img id="cone_1_shadow" src="./src/images/step/cone_1_shadow.png" class="main-window-imgs"/>
-              <img id="cone_2" src="./src/images/step/cone_2.png" class="main-window-imgs"/>
-              <img id="cone_2_shadow" src="./src/images/step/cone_2_shadow.png" class="main-window-imgs"/>
-              <img id="cone_3" src="./src/images/step/cone_3.png" class="main-window-imgs"/>
-              <img id="cone_3_shadow" src="./src/images/step/cone_3_shadow.png" class="main-window-imgs"/>
-              <img id="cone_4" src="./src/images/step/cone_4.png" class="main-window-imgs"/>
-              <img id="cone_4_shadow" src="./src/images/step/cone_4_shadow.png" class="main-window-imgs"/>
-              <img id="controller_scr1" src="./src/images/step/controller_scr1.png" class="main-window-imgs"/>
-              <img id="controller_scr10" src="./src/images/step/controller_scr10.png" class="main-window-imgs"/>
-              <img id="controller_scr11" src="./src/images/step/controller_scr11.png" class="main-window-imgs"/>
-              <img id="controller_scr12" src="./src/images/step/controller_scr12.png" class="main-window-imgs"/>
-              <img id="controller_scr12_1" src="./src/images/step/controller_scr12_1.png" class="main-window-imgs"/>
-              <img id="controller_scr13" src="./src/images/step/controller_scr13.png" class="main-window-imgs"/>
-              <img id="controller_scr14" src="./src/images/step/controller_scr14.png" class="main-window-imgs"/>
-              <img id="controller_scr14_1" src="./src/images/step/controller_scr14_1.png" class="main-window-imgs"/>
-              <img id="controller_scr14_10" src="./src/images/step/controller_scr14_10.png" class="main-window-imgs"/>
-              <img id="controller_scr14_11" src="./src/images/step/controller_scr14_11.png" class="main-window-imgs"/>
-              <img id="controller_scr14_2" src="./src/images/step/controller_scr14_2.png" class="main-window-imgs"/>
-              <img id="controller_scr14_3" src="./src/images/step/controller_scr14_3.png" class="main-window-imgs"/>
-              <img id="controller_scr14_4" src="./src/images/step/controller_scr14_4.png" class="main-window-imgs"/>
-              <img id="controller_scr14_5" src="./src/images/step/controller_scr14_5.png" class="main-window-imgs"/>
-              <img id="controller_scr14_6" src="./src/images/step/controller_scr14_6.png" class="main-window-imgs"/>
-              <img id="controller_scr14_7" src="./src/images/step/controller_scr14_7.png" class="main-window-imgs"/>
-              <img id="controller_scr14_8" src="./src/images/step/controller_scr14_8.png" class="main-window-imgs"/>
-              <img id="controller_scr14_9" src="./src/images/step/controller_scr14_9.png" class="main-window-imgs"/>
-              <img id="controller_scr15" src="./src/images/step/controller_scr15.png" class="main-window-imgs"/>
-              <img id="controller_scr16" src="./src/images/step/controller_scr16.jpg" class="main-window-imgs"/>
-              <img id="controller_scr2" src="./src/images/step/controller_scr2.png" class="main-window-imgs"/>
-              <img id="controller_scr3" src="./src/images/step/controller_scr3.png" class="main-window-imgs"/>
-              <img id="controller_scr4" src="./src/images/step/controller_scr4.png" class="main-window-imgs"/>
-              <img id="controller_scr5" src="./src/images/step/controller_scr5.png" class="main-window-imgs"/>
-              <img id="controller_scr6" src="./src/images/step/controller_scr6.png" class="main-window-imgs"/>
-              <img id="controller_scr7" src="./src/images/step/controller_scr7.png" class="main-window-imgs"/>
-              <img id="controller_scr8" src="./src/images/step/controller_scr8.png" class="main-window-imgs"/>
-              <img id="controller_scr9" src="./src/images/step/controller_scr9.png" class="main-window-imgs"/>
-              <img id="del" src="./src/images/step/del.png" class="main-window-imgs"/>
-              <img id="drone_box" src="./src/images/step/drone_box.png" class="main-window-imgs"/>
-              <img id="drone_box_open" src="./src/images/step/drone_box_open.png" class="main-window-imgs"/>
-              <img id="drone_final" src="./src/images/step/drone_final.png" class="main-window-imgs"/>
-              <img id="drone_flying" src="./src/images/step/drone_flying.png" class="main-window-imgs"/>
-              <img id="drone_flying_0" src="./src/images/step/drone_flying_0.png" class="main-window-imgs"/>
-              <img id="drone_flying_1" src="./src/images/step/drone_flying_1.png" class="main-window-imgs"/>
-              <img id="drone_flying_2" src="./src/images/step/drone_flying_2.png" class="main-window-imgs"/>
-              <img id="drone_for_fly" src="./src/images/step/drone_for_fly.png" class="main-window-imgs"/>
-              <img id="drone_for_fly_shadow" src="./src/images/step/drone_for_fly_shadow.png" class="main-window-imgs"/>
-              <img id="drone_for_fly_shadow_upscaled" src="./src/images/step/drone_for_fly_shadow_upscaled.png" class="main-window-imgs"/>
-              <img id="drone_power_btn_zoom" src="./src/images/step/drone_power_btn_zoom.png" class="main-window-imgs"/>
-              <img id="drone_power_btn_zoom_1" src="./src/images/step/drone_power_btn_zoom_1.png" class="main-window-imgs"/>
-              <img id="drone_power_btn_zoom_2" src="./src/images/step/drone_power_btn_zoom_2.png" class="main-window-imgs"/>
-              <img id="drone_power_btn_zoom_3" src="./src/images/step/drone_power_btn_zoom_3.png" class="main-window-imgs"/>
-              <img id="drone_power_btn_zoom_4" src="./src/images/step/drone_power_btn_zoom_4.png" class="main-window-imgs"/>
-              <img id="drone_power_btn_zoom_5" src="./src/images/step/drone_power_btn_zoom_5.png" class="main-window-imgs"/>
-              <img id="drone_power_btn_zoom_6" src="./src/images/step/drone_power_btn_zoom_6.png" class="main-window-imgs"/>
-              <img id="drone_rotating" src="./src/images/step/drone_rotating.gif" class="main-window-imgs"/>
-              <img id="drone_rtk" src="./src/images/step/drone_rtk.png" class="main-window-imgs"/>
-              <img id="drone_top_view" src="./src/images/step/drone_top_view.png" class="main-window-imgs"/>
-              <img id="drone_without_wings" src="./src/images/step/drone_without_wings.png" class="main-window-imgs"/>
-              <img id="gcp_1" src="./src/images/step/gcp_1.png" class="main-window-imgs"/>
-              <img id="gcp_2" src="./src/images/step/gcp_2.png" class="main-window-imgs"/>
-              <img id="gcp_3" src="./src/images/step/gcp_3.png" class="main-window-imgs"/>
-              <img id="gcp_4" src="./src/images/step/gcp_4.png" class="main-window-imgs"/>
-              <img id="gcp_setup_map_1" src="./src/images/step/gcp_setup_map_1.png" class="main-window-imgs"/>
-              <img id="gcp_setup_map_2" src="./src/images/step/gcp_setup_map_2.png" class="main-window-imgs"/>
-              <img id="gcp_setup_map_3" src="./src/images/step/gcp_setup_map_3.png" class="main-window-imgs"/>
-              <img id="gcp_setup_map_4" src="./src/images/step/gcp_setup_map_4.png" class="main-window-imgs"/>
-              <img id="gcp_setup_map_5" src="./src/images/step/gcp_setup_map_5.png" class="main-window-imgs"/>
-              <img id="gnss_base" src="./src/images/step/gnss_base.png" class="main-window-imgs"/>
-              <img id="gnss_base_zoom_1" src="./src/images/step/gnss_base_zoom_1.png" class="main-window-imgs"/>
-              <img id="gnss_base_zoom_2_on" src="./src/images/step/gnss_base_zoom_2_on.png" class="main-window-imgs"/>
-              <img id="gnss_base_zoom_3_all_lights" src="./src/images/step/gnss_base_zoom_3_all_lights.png" class="main-window-imgs"/>
-              <img id="gnss_base_zoom_4_on" src="./src/images/step/gnss_base_zoom_4_on.png" class="main-window-imgs"/>
-              <img id="gnss_base_zoom_5_wifi_on" src="./src/images/step/gnss_base_zoom_5_wifi_on.png" class="main-window-imgs"/>
-              <img id="gnss_rover" src="./src/images/step/gnss_rover.png" class="main-window-imgs"/>
-              <img id="gnss_rover_zoom_1" src="./src/images/step/gnss_rover_zoom_1.png" class="main-window-imgs"/>
-              <img id="gnss_rover_zoom_2_on" src="./src/images/step/gnss_rover_zoom_2_on.png" class="main-window-imgs"/>
-              <img id="gnss_rover_zoom_3_all_lights" src="./src/images/step/gnss_rover_zoom_3_all_lights.png" class="main-window-imgs"/>
-              <img id="gnss_rover_zoom_4_on" src="./src/images/step/gnss_rover_zoom_4_on.png" class="main-window-imgs"/>
-              <img id="gnss_rover_zoom_5_wifi" src="./src/images/step/gnss_rover_zoom_5_wifi.png" class="main-window-imgs"/>
-              <img id="helper" src="./src/images/step/helper.png" class="main-window-imgs"/>
-              <img id="i10_slideer" src="./src/images/step/i10_slideer.png" class="main-window-imgs"/>
-              <img id="i10_transparent" src="./src/images/step/i10_transparent.png" class="main-window-imgs"/>
-              <img id="i10_yellow_slide" src="./src/images/step/i10_yellow_slide.png" class="main-window-imgs"/>
-              <img id="img1" src="./src/images/step/img1.jpg" class="main-window-imgs"/>
-              <img id="img10" src="./src/images/step/img10.jpg" class="main-window-imgs"/>
-              <img id="img11" src="./src/images/step/img11.jpg" class="main-window-imgs"/>
-              <img id="img12" src="./src/images/step/img12.jpg" class="main-window-imgs"/>
-              <img id="img13" src="./src/images/step/img13.jpg" class="main-window-imgs"/>
-              <img id="img14" src="./src/images/step/img14.jpg" class="main-window-imgs"/>
-              <img id="img15" src="./src/images/step/img15.jpg" class="main-window-imgs"/>
-              <img id="img16" src="./src/images/step/img16.jpg" class="main-window-imgs"/>
-              <img id="img17" src="./src/images/step/img17.jpg" class="main-window-imgs"/>
-              <img id="img18" src="./src/images/step/img18.jpg" class="main-window-imgs"/>
-              <img id="img19" src="./src/images/step/img19.jpg" class="main-window-imgs"/>
-              <img id="img2" src="./src/images/step/img2.jpg" class="main-window-imgs"/>
-              <img id="img20" src="./src/images/step/img20.jpg" class="main-window-imgs"/>
-              <img id="img21" src="./src/images/step/img21.jpg" class="main-window-imgs"/>
-              <img id="img22" src="./src/images/step/img22.jpg" class="main-window-imgs"/>
-              <img id="img23" src="./src/images/step/img23.jpg" class="main-window-imgs"/>
-              <img id="img24" src="./src/images/step/img24.jpg" class="main-window-imgs"/>
-              <img id="img25" src="./src/images/step/img25.jpg" class="main-window-imgs"/>
-              <img id="img26" src="./src/images/step/img26.jpg" class="main-window-imgs"/>
-              <img id="img27" src="./src/images/step/img27.jpg" class="main-window-imgs"/>
-              <img id="img28" src="./src/images/step/img28.jpg" class="main-window-imgs"/>
-              <img id="img29" src="./src/images/step/img29.jpg" class="main-window-imgs"/>
-              <img id="img3" src="./src/images/step/img3.jpg" class="main-window-imgs"/>
-              <img id="img30" src="./src/images/step/img30.jpg" class="main-window-imgs"/>
-              <img id="img31" src="./src/images/step/img31.jpg" class="main-window-imgs"/>
-              <img id="img32" src="./src/images/step/img32.jpg" class="main-window-imgs"/>
-              <img id="img33" src="./src/images/step/img33.jpg" class="main-window-imgs"/>
-              <img id="img34" src="./src/images/step/img34.jpg" class="main-window-imgs"/>
-              <img id="img35" src="./src/images/step/img35.jpg" class="main-window-imgs"/>
-              <img id="img36" src="./src/images/step/img36.jpg" class="main-window-imgs"/>
-              <img id="img37" src="./src/images/step/img37.jpg" class="main-window-imgs"/>
-              <img id="img38" src="./src/images/step/img38.jpg" class="main-window-imgs"/>
-              <img id="img39" src="./src/images/step/img39.jpg" class="main-window-imgs"/>
-              <img id="img4" src="./src/images/step/img4.jpg" class="main-window-imgs"/>
-              <img id="img40" src="./src/images/step/img40.jpg" class="main-window-imgs"/>
-              <img id="img41" src="./src/images/step/img41.jpg" class="main-window-imgs"/>
-              <img id="img42" src="./src/images/step/img42.jpg" class="main-window-imgs"/>
-              <img id="img43" src="./src/images/step/img43.jpg" class="main-window-imgs"/>
-              <img id="img44" src="./src/images/step/img44.jpg" class="main-window-imgs"/>
-              <img id="img45" src="./src/images/step/img45.jpg" class="main-window-imgs"/>
-              <img id="img46" src="./src/images/step/img46.jpg" class="main-window-imgs"/>
-              <img id="img47" src="./src/images/step/img47.jpg" class="main-window-imgs"/>
-              <img id="img48" src="./src/images/step/img48.jpg" class="main-window-imgs"/>
-              <img id="img49" src="./src/images/step/img49.jpg" class="main-window-imgs"/>
-              <img id="img5" src="./src/images/step/img5.jpg" class="main-window-imgs"/>
-              <img id="img50" src="./src/images/step/img50.jpg" class="main-window-imgs"/>
-              <img id="img51" src="./src/images/step/img51.jpg" class="main-window-imgs"/>
-              <img id="img52" src="./src/images/step/img52.jpg" class="main-window-imgs"/>
-              <img id="img53" src="./src/images/step/img53.jpg" class="main-window-imgs"/>
-              <img id="img54" src="./src/images/step/img54.jpg" class="main-window-imgs"/>
-              <img id="img55" src="./src/images/step/img55.jpg" class="main-window-imgs"/>
-              <img id="img56" src="./src/images/step/img56.jpg" class="main-window-imgs"/>
-              <img id="img57" src="./src/images/step/img57.jpg" class="main-window-imgs"/>
-              <img id="img58" src="./src/images/step/img58.jpg" class="main-window-imgs"/>
-              <img id="img59" src="./src/images/step/img59.jpg" class="main-window-imgs"/>
-              <img id="img6" src="./src/images/step/img6.jpg" class="main-window-imgs"/>
-              <img id="img60" src="./src/images/step/img60.jpg" class="main-window-imgs"/>
-              <img id="img61" src="./src/images/step/img61.jpg" class="main-window-imgs"/>
-              <img id="img62" src="./src/images/step/img62.jpg" class="main-window-imgs"/>
-              <img id="img63" src="./src/images/step/img63.jpg" class="main-window-imgs"/>
-              <img id="img64" src="./src/images/step/img64.jpg" class="main-window-imgs"/>
-              <img id="img7" src="./src/images/step/img7.jpg" class="main-window-imgs"/>
-              <img id="img8" src="./src/images/step/img8.jpg" class="main-window-imgs"/>
-              <img id="img9" src="./src/images/step/img9.jpg" class="main-window-imgs"/>
-              <img id="intro_bcg" src="./src/images/step/intro_bcg.png" class="main-window-imgs"/>
-              <img id="intro_bcg_2" src="./src/images/step/intro_bcg_2.png" class="main-window-imgs"/>
-              <img id="laptop" src="./src/images/step/laptop.png" class="main-window-imgs"/>
-              <img id="laptop_frame" src="./src/images/step/laptop_frame.png" class="main-window-imgs"/>
-              <img id="laptop_screen" src="./src/images/step/laptop_screen.png" class="main-window-imgs"/>
-              <img id="location_drone_arrow" src="./src/images/step/location_drone_arrow.png" class="main-window-imgs"/>
-              <img id="location_heliped_mark" src="./src/images/step/location_heliped_mark.png" class="main-window-imgs"/>
+              <img id="arrow_1" src="./src/images/step/arrow_1.png" class="main-window-imgs"/>
+              <img id="arrow_2" src="./src/images/step/arrow_2.png" class="main-window-imgs"/>
+              <img id="Battery2_zoom_1_connections" src="./src/images/step/Battery2_zoom_1_connections.png" class="main-window-imgs"/>
+              <img id="Battery2_zoom_2_connections_hidden" src="./src/images/step/Battery2_zoom_2_connections_hidden.png" class="main-window-imgs"/>
+              <img id="Battery2_zoom_3_connections_visible" src="./src/images/step/Battery2_zoom_3_connections_visible.png" class="main-window-imgs"/>
+              <img id="bat_list_1" src="./src/images/step/bat_list_1.png" class="main-window-imgs"/>
+              <img id="bat_list_1_heading" src="./src/images/step/bat_list_1_heading.png" class="main-window-imgs"/>
+              <img id="bat_list_2" src="./src/images/step/bat_list_2.png" class="main-window-imgs"/>
+              <img id="bat_list_2_heading" src="./src/images/step/bat_list_2_heading.png" class="main-window-imgs"/>
+              <img id="bgimag" src="./src/images/step/bgimag.png" class="main-window-imgs"/>
+              <img id="binding_key" src="./src/images/step/binding_key.png" class="main-window-imgs"/>
+              <img id="black_arrow_1" src="./src/images/step/black_arrow_1.png" class="main-window-imgs"/>
+              <img id="black_arrow_2" src="./src/images/step/black_arrow_2.png" class="main-window-imgs"/>
+              <img id="blank_box" src="./src/images/step/blank_box.png" class="main-window-imgs"/>
+              <img id="btn_check_connection" src="./src/images/step/btn_check_connection.png" class="main-window-imgs"/>
+              <img id="btn_check_physical_damage" src="./src/images/step/btn_check_physical_damage.png" class="main-window-imgs"/>
+              <img id="btn_start_rectifying" src="./src/images/step/btn_start_rectifying.png" class="main-window-imgs"/>
+              <img id="btn_start_tracing_1" src="./src/images/step/btn_start_tracing_1.png" class="main-window-imgs"/>
+              <img id="btn_start_tracing_2" src="./src/images/step/btn_start_tracing_2.png" class="main-window-imgs"/>
+              <img id="drone_3d_img" src="./src/images/step/drone_3d_img.png" class="main-window-imgs"/>
+              <img id="drone_back_side" src="./src/images/step/drone_back_side.png" class="main-window-imgs"/>
+              <img id="drone_front_side" src="./src/images/step/drone_front_side.png" class="main-window-imgs"/>
+              <img id="drone_front_side_after_removing_upper_plate" src="./src/images/step/drone_front_side_after_removing_upper_plate.png" class="main-window-imgs"/>
+              <img id="drone_without_pmu" src="./src/images/step/drone_without_pmu.png" class="main-window-imgs"/>
+              <img id="flight_controller_zoom_img" src="./src/images/step/flight_controller_zoom_img.png" class="main-window-imgs"/>
+              <img id="front_page_box" src="./src/images/step/front_page_box.png" class="main-window-imgs"/>
+              <img id="fullfinal_drone" src="./src/images/step/fullfinal_drone.png" class="main-window-imgs"/>
+              <img id="homepage_battery_issue" src="./src/images/step/homepage_battery_issue.png" class="main-window-imgs"/>
+              <img id="intro_page" src="./src/images/step/intro_page.png" class="main-window-imgs"/>
+              <img id="issue_1" src="./src/images/step/issue_1.png" class="main-window-imgs"/>
+              <img id="issue_2" src="./src/images/step/issue_2.png" class="main-window-imgs"/>
+              <img id="issue_bat" src="./src/images/step/issue_bat.png" class="main-window-imgs"/>
+              <img id="issue_battery_listings" src="./src/images/step/issue_battery_listings.png" class="main-window-imgs"/>
+              <img id="issue_pmu" src="./src/images/step/issue_pmu.png" class="main-window-imgs"/>
               <img id="mask" src="./src/images/step/mask.png" class="main-window-imgs"/>
-              <img id="mask_for_click_submit" src="./src/images/step/mask_for_click_submit.png" class="main-window-imgs"/>
-              <img id="memory_card" src="./src/images/step/memory_card.png" class="main-window-imgs"/>
-              <img id="phone_dummy" src="./src/images/step/phone_dummy.png" class="main-window-imgs"/>
-              <img id="phone_empty_screen" src="./src/images/step/phone_empty_screen.png" class="main-window-imgs"/>
-              <img id="phone_screen_bg_blur" src="./src/images/step/phone_screen_bg_blur.png" class="main-window-imgs"/>
-              <img id="prop1" src="./src/images/step/prop1.png" class="main-window-imgs"/>
-              <img id="prop1_1" src="./src/images/step/prop1_1.png" class="main-window-imgs"/>
-              <img id="prop2" src="./src/images/step/prop2.png" class="main-window-imgs"/>
-              <img id="prop2_1" src="./src/images/step/prop2_1.png" class="main-window-imgs"/>
-              <img id="rc" src="./src/images/step/rc.png" class="main-window-imgs"/>
-              <img id="rc2" src="./src/images/step/rc2.png" class="main-window-imgs"/>
-              <img id="rc_on" src="./src/images/step/rc_on.png" class="main-window-imgs"/>
-              <img id="rc_on_2" src="./src/images/step/rc_on_2.png" class="main-window-imgs"/>
-              <img id="rc_wouthandle" src="./src/images/step/rc_wouthandle.png" class="main-window-imgs"/>
-              <img id="rc_zoom" src="./src/images/step/rc_zoom.png" class="main-window-imgs"/>
-              <img id="required_page" src="./src/images/step/required_page.png" class="main-window-imgs"/>
-              <img id="rover_gcp_setup_10_1_progress" src="./src/images/step/rover_gcp_setup_10_1_progress.png" class="main-window-imgs"/>
-              <img id="rover_gcp_setup_10_2_progress" src="./src/images/step/rover_gcp_setup_10_2_progress.png" class="main-window-imgs"/>
-              <img id="rover_gcp_setup_10_3_progress" src="./src/images/step/rover_gcp_setup_10_3_progress.png" class="main-window-imgs"/>
-              <img id="rover_gcp_setup_10_click_on_measure" src="./src/images/step/rover_gcp_setup_10_click_on_measure.png" class="main-window-imgs"/>
-              <img id="rover_gcp_setup_11_click_close" src="./src/images/step/rover_gcp_setup_11_click_close.png" class="main-window-imgs"/>
-              <img id="rover_gcp_setup_12_final" src="./src/images/step/rover_gcp_setup_12_final.png" class="main-window-imgs"/>
-              <img id="rover_gcp_setup_13_click_on_add" src="./src/images/step/rover_gcp_setup_13_click_on_add.png" class="main-window-imgs"/>
-              <img id="rover_gcp_setup_14_1_progress" src="./src/images/step/rover_gcp_setup_14_1_progress.png" class="main-window-imgs"/>
-              <img id="rover_gcp_setup_14_2_progress" src="./src/images/step/rover_gcp_setup_14_2_progress.png" class="main-window-imgs"/>
-              <img id="rover_gcp_setup_14_3_progress" src="./src/images/step/rover_gcp_setup_14_3_progress.png" class="main-window-imgs"/>
-              <img id="rover_gcp_setup_14_click_on_measure" src="./src/images/step/rover_gcp_setup_14_click_on_measure.png" class="main-window-imgs"/>
-              <img id="rover_gcp_setup_15_click_on_close" src="./src/images/step/rover_gcp_setup_15_click_on_close.png" class="main-window-imgs"/>
-              <img id="rover_gcp_setup_16_final" src="./src/images/step/rover_gcp_setup_16_final.png" class="main-window-imgs"/>
-              <img id="rover_gcp_setup_17_click_on_add" src="./src/images/step/rover_gcp_setup_17_click_on_add.png" class="main-window-imgs"/>
-              <img id="rover_gcp_setup_18_1_progress" src="./src/images/step/rover_gcp_setup_18_1_progress.png" class="main-window-imgs"/>
-              <img id="rover_gcp_setup_18_2_progress" src="./src/images/step/rover_gcp_setup_18_2_progress.png" class="main-window-imgs"/>
-              <img id="rover_gcp_setup_18_3_progress" src="./src/images/step/rover_gcp_setup_18_3_progress.png" class="main-window-imgs"/>
-              <img id="rover_gcp_setup_18_click_on_measure" src="./src/images/step/rover_gcp_setup_18_click_on_measure.png" class="main-window-imgs"/>
-              <img id="rover_gcp_setup_19_click_on_close" src="./src/images/step/rover_gcp_setup_19_click_on_close.png" class="main-window-imgs"/>
-              <img id="rover_gcp_setup_1_survey" src="./src/images/step/rover_gcp_setup_1_survey.png" class="main-window-imgs"/>
-              <img id="rover_gcp_setup_20_final" src="./src/images/step/rover_gcp_setup_20_final.png" class="main-window-imgs"/>
-              <img id="rover_gcp_setup_2_add_clicked" src="./src/images/step/rover_gcp_setup_2_add_clicked.png" class="main-window-imgs"/>
-              <img id="rover_gcp_setup_3_1_edit_clicked" src="./src/images/step/rover_gcp_setup_3_1_edit_clicked.png" class="main-window-imgs"/>
-              <img id="rover_gcp_setup_3_edit_clicked" src="./src/images/step/rover_gcp_setup_3_edit_clicked.png" class="main-window-imgs"/>
-              <img id="rover_gcp_setup_4_1_values_change" src="./src/images/step/rover_gcp_setup_4_1_values_change.png" class="main-window-imgs"/>
-              <img id="rover_gcp_setup_4_2_values_change" src="./src/images/step/rover_gcp_setup_4_2_values_change.png" class="main-window-imgs"/>
-              <img id="rover_gcp_setup_4_3_values_change" src="./src/images/step/rover_gcp_setup_4_3_values_change.png" class="main-window-imgs"/>
-              <img id="rover_gcp_setup_4_save_clicked" src="./src/images/step/rover_gcp_setup_4_save_clicked.png" class="main-window-imgs"/>
-              <img id="rover_gcp_setup_5_click_on_fix" src="./src/images/step/rover_gcp_setup_5_click_on_fix.png" class="main-window-imgs"/>
-              <img id="rover_gcp_setup_6_1_progress" src="./src/images/step/rover_gcp_setup_6_1_progress.png" class="main-window-imgs"/>
-              <img id="rover_gcp_setup_6_2_progress" src="./src/images/step/rover_gcp_setup_6_2_progress.png" class="main-window-imgs"/>
-              <img id="rover_gcp_setup_6_3_progress" src="./src/images/step/rover_gcp_setup_6_3_progress.png" class="main-window-imgs"/>
-              <img id="rover_gcp_setup_6_click_on_measure" src="./src/images/step/rover_gcp_setup_6_click_on_measure.png" class="main-window-imgs"/>
-              <img id="rover_gcp_setup_7_click_close" src="./src/images/step/rover_gcp_setup_7_click_close.png" class="main-window-imgs"/>
-              <img id="rover_gcp_setup_8_final" src="./src/images/step/rover_gcp_setup_8_final.png" class="main-window-imgs"/>
-              <img id="rover_gcp_setup_9_click_on_add" src="./src/images/step/rover_gcp_setup_9_click_on_add.png" class="main-window-imgs"/>
-              <img id="rover_setup_phone_display_0" src="./src/images/step/rover_setup_phone_display_0.png" class="main-window-imgs"/>
-              <img id="rover_setup_phone_display_1" src="./src/images/step/rover_setup_phone_display_1.png" class="main-window-imgs"/>
-              <img id="rover_setup_phone_display_2" src="./src/images/step/rover_setup_phone_display_2.png" class="main-window-imgs"/>
-              <img id="rover_setup_phone_display_2_1" src="./src/images/step/rover_setup_phone_display_2_1.png" class="main-window-imgs"/>
-              <img id="rover_setup_phone_display_2_2" src="./src/images/step/rover_setup_phone_display_2_2.png" class="main-window-imgs"/>
-              <img id="rover_setup_phone_display_2_3" src="./src/images/step/rover_setup_phone_display_2_3.png" class="main-window-imgs"/>
-              <img id="rover_setup_phone_display_2_4" src="./src/images/step/rover_setup_phone_display_2_4.png" class="main-window-imgs"/>
-              <img id="rover_setup_phone_display_2_5" src="./src/images/step/rover_setup_phone_display_2_5.png" class="main-window-imgs"/>
-              <img id="rover_setup_phone_display_2_6" src="./src/images/step/rover_setup_phone_display_2_6.png" class="main-window-imgs"/>
-              <img id="rover_setup_phone_display_2_7" src="./src/images/step/rover_setup_phone_display_2_7.png" class="main-window-imgs"/>
-              <img id="rover_setup_phone_display_2_8" src="./src/images/step/rover_setup_phone_display_2_8.png" class="main-window-imgs"/>
-              <img id="rover_setup_phone_display_3" src="./src/images/step/rover_setup_phone_display_3.png" class="main-window-imgs"/>
-              <img id="rover_setup_phone_display_4" src="./src/images/step/rover_setup_phone_display_4.png" class="main-window-imgs"/>
-              <img id="rover_setup_phone_display_4_1" src="./src/images/step/rover_setup_phone_display_4_1.png" class="main-window-imgs"/>
-              <img id="rover_setup_phone_display_4_2" src="./src/images/step/rover_setup_phone_display_4_2.png" class="main-window-imgs"/>
-              <img id="rover_setup_phone_display_4_3" src="./src/images/step/rover_setup_phone_display_4_3.png" class="main-window-imgs"/>
-              <img id="rover_setup_phone_display_4_4" src="./src/images/step/rover_setup_phone_display_4_4.png" class="main-window-imgs"/>
-              <img id="rover_setup_phone_display_4_5" src="./src/images/step/rover_setup_phone_display_4_5.png" class="main-window-imgs"/>
-              <img id="rover_setup_phone_display_5" src="./src/images/step/rover_setup_phone_display_5.png" class="main-window-imgs"/>
-              <img id="rover_setup_phone_display_6" src="./src/images/step/rover_setup_phone_display_6.png" class="main-window-imgs"/>
-              <img id="rover_setup_phone_display_7" src="./src/images/step/rover_setup_phone_display_7.png" class="main-window-imgs"/>
-              <img id="rover_setup_phone_display_7_1" src="./src/images/step/rover_setup_phone_display_7_1.png" class="main-window-imgs"/>
-              <img id="rover_setup_phone_display_7_2" src="./src/images/step/rover_setup_phone_display_7_2.png" class="main-window-imgs"/>
-              <img id="rover_setup_portrait_map_1" src="./src/images/step/rover_setup_portrait_map_1.png" class="main-window-imgs"/>
-              <img id="rover_tripod" src="./src/images/step/rover_tripod.png" class="main-window-imgs"/>
-              <img id="rover_tripod_closed" src="./src/images/step/rover_tripod_closed.png" class="main-window-imgs"/>
-              <img id="rover_tripod_closed_with_gnss" src="./src/images/step/rover_tripod_closed_with_gnss.png" class="main-window-imgs"/>
-              <img id="rover_tripod_with_gnss" src="./src/images/step/rover_tripod_with_gnss.png" class="main-window-imgs"/>
-              <img id="screenzoom" src="./src/images/step/screenzoom.png" class="main-window-imgs"/>
-              <img id="screenzoomopen" src="./src/images/step/screenzoomopen.png" class="main-window-imgs"/>
-              <img id="small_map_location_1" src="./src/images/step/small_map_location_1.png" class="main-window-imgs"/>
-              <img id="small_map_location_2" src="./src/images/step/small_map_location_2.png" class="main-window-imgs"/>
-              <img id="small_map_location_3" src="./src/images/step/small_map_location_3.png" class="main-window-imgs"/>
-              <img id="small_map_location_4" src="./src/images/step/small_map_location_4.png" class="main-window-imgs"/>
-              <img id="small_map_location_4_done" src="./src/images/step/small_map_location_4_done.png" class="main-window-imgs"/>
-              <img id="small_map_location_drone_fly" src="./src/images/step/small_map_location_drone_fly.png" class="main-window-imgs"/>
-              <img id="table" src="./src/images/step/table.png" class="main-window-imgs"/>
-              <img id="top_view_background" src="./src/images/step/top_view_background.png" class="main-window-imgs"/>
-              <img id="tribrach" src="./src/images/step/tribrach.png" class="main-window-imgs"/>
-              <img id="tribrach_extension" src="./src/images/step/tribrach_extension.png" class="main-window-imgs"/>
-              <img id="tribrach_rotating_adapter" src="./src/images/step/tribrach_rotating_adapter.png" class="main-window-imgs"/>
-              <img id="tribrach_with_extension_for_base" src="./src/images/step/tribrach_with_extension_for_base.png" class="main-window-imgs"/>
-              <img id="tribrach_zoom_1" src="./src/images/step/tribrach_zoom_1.png" class="main-window-imgs"/>
-              <img id="tribrach_zoom_2" src="./src/images/step/tribrach_zoom_2.png" class="main-window-imgs"/>
-              <img id="xrc" src="./src/images/step/xrc.png" class="main-window-imgs"/>
-              <img id="zoomremotelight" src="./src/images/step/zoomremotelight.png" class="main-window-imgs"/>
-              <img id="zoomremotepower" src="./src/images/step/zoomremotepower.png" class="main-window-imgs"/>
+              <img id="pmuwithwire" src="./src/images/step/pmuwithwire.png" class="main-window-imgs"/>
+              <img id="pmuzoom" src="./src/images/step/pmuzoom.png" class="main-window-imgs"/>
+              <img id="pmu_img" src="./src/images/step/pmu_img.png" class="main-window-imgs"/>
+              <img id="pmu_lifted" src="./src/images/step/pmu_lifted.png" class="main-window-imgs"/>
+              <img id="pmu_zoom_img_pmu" src="./src/images/step/pmu_zoom_img_pmu.png" class="main-window-imgs"/>
+              <img id="popup_1" src="./src/images/step/popup_1.png" class="main-window-imgs"/>
+              <img id="popup_2" src="./src/images/step/popup_2.png" class="main-window-imgs"/>
+              <img id="problem2_issue2_battery_only" src="./src/images/step/problem2_issue2_battery_only.png" class="main-window-imgs"/>
+              <img id="problem2_issue2_battery_removed_drone" src="./src/images/step/problem2_issue2_battery_removed_drone.png" class="main-window-imgs"/>
+              <img id="problem2_issue2_belt_opend" src="./src/images/step/problem2_issue2_belt_opend.png" class="main-window-imgs"/>
+              <img id="problem2_issue2_dean_plug_unpluged" src="./src/images/step/problem2_issue2_dean_plug_unpluged.png" class="main-window-imgs"/>
+              <img id="problem2_issue2_fc_and_rx_only" src="./src/images/step/problem2_issue2_fc_and_rx_only.png" class="main-window-imgs"/>
+              <img id="problem2_issue2_gluegun" src="./src/images/step/problem2_issue2_gluegun.png" class="main-window-imgs"/>
+              <img id="problem2_issue2_gluegun2" src="./src/images/step/problem2_issue2_gluegun2.png" class="main-window-imgs"/>
+              <img id="problem2_issue2_gluepoint" src="./src/images/step/problem2_issue2_gluepoint.png" class="main-window-imgs"/>
+              <img id="problem2_issue2_gps_sided" src="./src/images/step/problem2_issue2_gps_sided.png" class="main-window-imgs"/>
+              <img id="problem2_issue2_gunintro" src="./src/images/step/problem2_issue2_gunintro.png" class="main-window-imgs"/>
+              <img id="problem2_issue2_handrod_wire" src="./src/images/step/problem2_issue2_handrod_wire.png" class="main-window-imgs"/>
+              <img id="problem2_issue2_only_bottom_plate" src="./src/images/step/problem2_issue2_only_bottom_plate.png" class="main-window-imgs"/>
+              <img id="problem2_issue2_silverhand" src="./src/images/step/problem2_issue2_silverhand.png" class="main-window-imgs"/>
+              <img id="problem2_issue2_sm1" src="./src/images/step/problem2_issue2_sm1.png" class="main-window-imgs"/>
+              <img id="problem2_issue2_soldpoint" src="./src/images/step/problem2_issue2_soldpoint.png" class="main-window-imgs"/>
+              <img id="problem2_issue2_soldrod" src="./src/images/step/problem2_issue2_soldrod.png" class="main-window-imgs"/>
+              <img id="problem2_issue2_soldstand" src="./src/images/step/problem2_issue2_soldstand.png" class="main-window-imgs"/>
+              <img id="problem2_issue2_upper_plate_only" src="./src/images/step/problem2_issue2_upper_plate_only.png" class="main-window-imgs"/>
+              <img id="problem2_issue2_upper_plate_removed_drone" src="./src/images/step/problem2_issue2_upper_plate_removed_drone.png" class="main-window-imgs"/>
+              <img id="problem2_issue2_zoom_1_upper_plate_removed_drone" src="./src/images/step/problem2_issue2_zoom_1_upper_plate_removed_drone.png" class="main-window-imgs"/>
+              <img id="problem2_issue2_zoom_2_helper_zoom_view_loose_wire" src="./src/images/step/problem2_issue2_zoom_2_helper_zoom_view_loose_wire.png" class="main-window-imgs"/>
+              <img id="problem2_issue2_zoom_2_zoom_view_loose_wire" src="./src/images/step/problem2_issue2_zoom_2_zoom_view_loose_wire.png" class="main-window-imgs"/>
+              <img id="problem2_issue2_zoom_3_zoom_view_loose_wire_placed" src="./src/images/step/problem2_issue2_zoom_3_zoom_view_loose_wire_placed.png" class="main-window-imgs"/>
+              <img id="problem2_issue2_zoom_4_helper_zoom_view_loose_wire_soldered" src="./src/images/step/problem2_issue2_zoom_4_helper_zoom_view_loose_wire_soldered.png" class="main-window-imgs"/>
+              <img id="problem2_issue2_zoom_4_zoom_view_loose_wire_soldered" src="./src/images/step/problem2_issue2_zoom_4_zoom_view_loose_wire_soldered.png" class="main-window-imgs"/>
+              <img id="problem2_issue2_zoom_5_zoom_view_soldered_wire_glued" src="./src/images/step/problem2_issue2_zoom_5_zoom_view_soldered_wire_glued.png" class="main-window-imgs"/>
+              <img id="problem2_issue2_zoom_view_loose_wire" src="./src/images/step/problem2_issue2_zoom_view_loose_wire.png" class="main-window-imgs"/>
+              <img id="problem2_issue2_zoom_view_loose_wire_placed" src="./src/images/step/problem2_issue2_zoom_view_loose_wire_placed.png" class="main-window-imgs"/>
+              <img id="problem2_issue2_zoom_view_loose_wire_soldered" src="./src/images/step/problem2_issue2_zoom_view_loose_wire_soldered.png" class="main-window-imgs"/>
+              <img id="problem2_issue2_zoom_view_soldered_wire_glued" src="./src/images/step/problem2_issue2_zoom_view_soldered_wire_glued.png" class="main-window-imgs"/>
+              <img id="problem_1" src="./src/images/step/problem_1.png" class="main-window-imgs"/>
+              <img id="problem_1_battery" src="./src/images/step/problem_1_battery.png" class="main-window-imgs"/>
+              <img id="problem_1_battery_puffed" src="./src/images/step/problem_1_battery_puffed.png" class="main-window-imgs"/>
+              <img id="problem_1_drone_front_image" src="./src/images/step/problem_1_drone_front_image.png" class="main-window-imgs"/>
+              <img id="problem_1_drone_front_with_pmu_image" src="./src/images/step/problem_1_drone_front_with_pmu_image.png" class="main-window-imgs"/>
+              <img id="problem_1_drone_front_zoom_image" src="./src/images/step/problem_1_drone_front_zoom_image.png" class="main-window-imgs"/>
+              <img id="problem_1_drone_front_zoom_image_2" src="./src/images/step/problem_1_drone_front_zoom_image_2.png" class="main-window-imgs"/>
+              <img id="problem_1_pmu_zoom_img_2" src="./src/images/step/problem_1_pmu_zoom_img_2.png" class="main-window-imgs"/>
+              <img id="problem_1_soldering_iron_of_connector" src="./src/images/step/problem_1_soldering_iron_of_connector.png" class="main-window-imgs"/>
+              <img id="problem_2" src="./src/images/step/problem_2.png" class="main-window-imgs"/>
+              <img id="receiver_zoom_img" src="./src/images/step/receiver_zoom_img.png" class="main-window-imgs"/>
+              <img id="right_tick_1" src="./src/images/step/right_tick_1.png" class="main-window-imgs"/>
+              <img id="right_tick_2" src="./src/images/step/right_tick_2.png" class="main-window-imgs"/>
+              <img id="right_tick_3" src="./src/images/step/right_tick_3.png" class="main-window-imgs"/>
+              <img id="right_tick_4" src="./src/images/step/right_tick_4.png" class="main-window-imgs"/>
+              <img id="round_arrow" src="./src/images/step/round_arrow.png" class="main-window-imgs"/>
+              <img id="step_1_arrow_image_1" src="./src/images/step/step_1_arrow_image_1.png" class="main-window-imgs"/>
+              <img id="step_1_arrow_image_2" src="./src/images/step/step_1_arrow_image_2.png" class="main-window-imgs"/>
+              <img id="tab_1" src="./src/images/step/tab_1.png" class="main-window-imgs"/>
+              <img id="tab_2" src="./src/images/step/tab_2.png" class="main-window-imgs"/>
+              <img id="tab_3" src="./src/images/step/tab_3.png" class="main-window-imgs"/>
+              <img id="tab_4" src="./src/images/step/tab_4.png" class="main-window-imgs"/>
+              <img id="tab_dot" src="./src/images/step/tab_dot.png" class="main-window-imgs"/>
+              <img id="tie" src="./src/images/step/tie.png" class="main-window-imgs"/>
+              <img id="tie_tied" src="./src/images/step/tie_tied.png" class="main-window-imgs"/>
+              <img id="transmitter" src="./src/images/step/transmitter.png" class="main-window-imgs"/>
+              <img id="wire4arm_pmufix" src="./src/images/step/wire4arm_pmufix.png" class="main-window-imgs"/>
+              <img id="zoompmu" src="./src/images/step/zoompmu.png" class="main-window-imgs"/>
+              <img id="zoom_battery_with_bcg_and_border" src="./src/images/step/zoom_battery_with_bcg_and_border.png" class="main-window-imgs"/>
+              <img id="zoom_dean_plug" src="./src/images/step/zoom_dean_plug.png" class="main-window-imgs"/>
+              <img id="zoom_pmu_open_tie" src="./src/images/step/zoom_pmu_open_tie.png" class="main-window-imgs"/>
+              <img id="zoom_pmu_without_pmu" src="./src/images/step/zoom_pmu_without_pmu.png" class="main-window-imgs"/>
+              <img id="zoom_pmu_without_ziptie" src="./src/images/step/zoom_pmu_without_ziptie.png" class="main-window-imgs"/>
+              <img id="zoom_pmu_ziptie" src="./src/images/step/zoom_pmu_ziptie.png" class="main-window-imgs"/>
+              <img id="zoom_without_battery_and_border" src="./src/images/step/zoom_without_battery_and_border.png" class="main-window-imgs"/>
             </div>
             <!-- Step Videos -->
             <div class="step-videos">
@@ -825,12 +573,8 @@
               <video id="binding" src="./src/videos/step/binding.mp4" class="main-window-imgs"></video>
               <video id="dean_plug_connect_to_battery" src="./src/videos/step/dean_plug_connect_to_battery.mp4" class="main-window-imgs"></video>
               <video id="dean_plug_connect_to_center_plate" src="./src/videos/step/dean_plug_connect_to_center_plate.mp4" class="main-window-imgs"></video>
-              <video id="esc_to_fc_connections" src="./src/videos/step/esc_to_fc_connections.mp4" class="main-window-imgs"></video>
-              <video id="fc_replace" src="./src/videos/step/fc_replace.mp4" class="main-window-imgs"></video>
               <video id="pmu_iron_soldering" src="./src/videos/step/pmu_iron_soldering.mp4" class="main-window-imgs"></video>
-              <video id="pmu_to_fc_connections" src="./src/videos/step/pmu_to_fc_connections.mp4" class="main-window-imgs"></video>
               <video id="remove_upper_plate" src="./src/videos/step/remove_upper_plate.mp4" class="main-window-imgs"></video>
-              <video id="rx_replace" src="./src/videos/step/rx_replace.mp4" class="main-window-imgs"></video>
               <video id="send_dropping" src="./src/videos/step/send_dropping.mp4" class="main-window-imgs"></video>
               <video id="yoke_front_to_back" src="./src/videos/step/yoke_front_to_back.mp4" class="main-window-imgs"></video>
               <video id="yoke_front_to_side" src="./src/videos/step/yoke_front_to_side.mp4" class="main-window-imgs"></video>

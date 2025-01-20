@@ -132,8 +132,6 @@ body {
     height: 55px;
     color: white;
     background-color: #5C4B99;
-    /* for table */
-    z-index: 1;
 }
 
 .right-box {
@@ -469,15 +467,5 @@ body {
 
 .modal-box .footer .btn2{
     display: none;
-}
-
-/* Drag and Drop */
-
-#droppable > p{
-    margin: 0;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
